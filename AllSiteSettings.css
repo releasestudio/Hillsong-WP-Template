@@ -1,0 +1,747 @@
+/* Hillsong Site */
+
+/* Giving Button */
+.page-id-5840 .givebutton .button {
+  color: #464646;
+  background-color: #aa9054;
+  border-color: #aa9054;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  font-size: 18px !important;
+  border-radius: 0;
+  width: 100%;
+}
+
+.page-id-5840 .givebutton .button:hover {
+  color: #aa9054;
+  background-color: #464646;
+  border-color: #464646;
+}
+
+.page-id-5840 .channelbutton .button {
+  color: #fff;
+  background-color: #5e92ca;
+  border-color: #5e92ca;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  font-size: 18px !important;
+  border-radius: 0;
+  width: 100%;
+  line-height: 25px;
+}
+
+.page-id-5840 .channelbutton .button:hover {
+  color: #0555ac;
+  background-color: #95c1f1;
+  border-color: #95c1f1;
+}
+
+/* No Padding */
+.zero-padding .section-row {
+  padding-bottom: 0;
+}
+
+/* Night School CSS */
+.page-id-1432 .announcement,
+.parent-pageid-1432 .announcement,
+.parent-pageid-463837 .announcement {
+  background-color: #bdd5ea;
+  color: #495867;
+}
+
+.page-id-1432 .grey,
+.parent-pageid-1432 .grey,
+.parent-pageid-463837 .grey {
+  background: #f7f7ff;
+}
+
+.page-id-1432 .grey .lighttext,
+.parent-pageid-1432 .white .lighttext,
+.parent-pageid-463837 .white .lighttext {
+  color: #495867;
+}
+
+.page-id-1432 .fullrowbutton a,
+.parent-pageid-1432 .fullrowbutton a,
+.parent-pageid-463837 .fullrowbutton a {
+  background-color: #495867 !important;
+  color: #bdd5ea;
+}
+
+.page-id-1432 .quoterow .quote,
+.parent-pageid-1432 .quoterow .quote,
+.parent-pageid-463837 .quoterow .quote {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .page-id-1432 .quoterow .quote,
+  .parent-pageid-1432 .quoterow .quote,
+  .parent-pageid-463837 .quoterow .quote {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600px;
+  }
+}
+
+.page-id-1432 .calendar .iconcomponent-title,
+.parent-pageid-1432 .calendar .iconcomponent-title,
+.parent-pageid-463837 .calendar .iconcomponent-title {
+  text-align: left;
+}
+
+@media only screen and (max-width: 987px) {
+  .page-id-1432 .calendar .iconcomponent-text,
+  .parent-pageid-1432 .calendar .iconcomponent-text,
+  .parent-pageid-463837 .calendar .iconcomponent-text {
+    max-width: 350px;
+  }
+}
+
+/* Online Church Fonts */
+@import url("https://use.typekit.net/wws5djj.css");
+
+.page-id-591157 .header .title h1,
+.parent-pageid-591157 .header .title h1 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 150px !important;
+  line-height: 120px !important;
+  letter-spacing: -0.06em !important;
+  text-align: left !important;
+  color: #fff;
+}
+
+.page-id-591157 .header .subtitle h2,
+.parent-pageid-591157 .header .subtitle h2 {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 44px !important;
+  line-height: 44px !important;
+  text-align: left !important;
+  color: #eeff03 !important;
+}
+
+@media only screen and (max-width: 766px) {
+  .page-id-591157 .header .title h1,
+  .parent-pageid-591157 .header .title h1 {
+    font-size: 74px !important;
+    line-height: 60px !important;
+  }
+
+  .page-id-591157 .header .subtitle h2,
+  .parent-pageid-591157 .header .subtitle h2 {
+    font-size: 26px !important;
+    line-height: 30px !important;
+  }
+}
+
+.page-id-591157 .header .rowbutton .button,
+.parent-pageid-591157 .header .rowbutton .button {
+  color: #fff !important;
+  background-color: #ff0044;
+  border-color: #ff0044 !important;
+  border-radius: 5px;
+  width: 300px;
+  letter-spacing: 0.1em;
+  float: left;
+}
+
+.page-id-591157 .announcement,
+.parent-pageid-591157 .announcement {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 28px;
+  color: #eeff03;
+}
+
+.page-id-591157 .lighttext,
+.parent-pageid-591157 .lighttext {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.page-id-591157 .darktext,
+.parent-pageid-591157 .darktext {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.page-id-591157 .rowtext,
+.parent-pageid-591157 .rowtext {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.page-id-591157 .iconcomponent-title,
+.parent-pageid-591157 .iconcomponent-title {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.page-id-591157 .iconcomponent-text,
+.parent-pageid-591157 .iconcomponent-text {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.page-id-591157 .button,
+.parent-pageid-591157 .button {
+  border-radius: 5px;
+  width: 300px;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+.page-id-591157 .text.col p,
+.parent-pageid-591157 .text.col p {
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.page-id-591157 .white .text.col p,
+.parent-pageid-591157 .white .text.col p {
+  color: #000;
+}
+
+.page-id-591157 .white .iconcomponent-title,
+.parent-pageid-591157 .white .iconcomponent-title {
+  color: #000;
+  font-weight: 400;
+}
+
+.page-id-591157 .white .iconcomponent-text,
+.parent-pageid-591157 .white .iconcomponent-text {
+  color: #000;
+}
+
+/* Kilo of Christmas Buttons */
+.page-id-617770 .red .rowbutton .button.red-button {
+  border-color: #f12f28;
+  background-color: #f12f28;
+  color: #ffffff;
+}
+
+/* Sisterhood Australia 2022 | JN Aug22 */
+/* <link rel="stylesheet" href="https://use.typekit.net/dse1jpy.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/zsr8isk.css"> */
+
+@import url("https://use.typekit.net/dse1jpy.css");
+@import url("https://use.typekit.net/zsr8isk.css");
+
+@font-face {
+  font-family: lydianBT;
+  src: url("//d9nqqwcssctr8.cloudfront.net/fonts/procerus/Procerus-Bold.eot");
+  src: url("//d9nqqwcssctr8.cloudfront.net/fonts/procerus/Procerus-Bold.eot")
+      format("embedded-opentype"),
+    url("//d9nqqwcssctr8.cloudfront.net/fonts/procerus/Procerus-Bold.woff")
+      format("woff"),
+    url("//d9nqqwcssctr8.cloudfront.net/fonts/procerus/Procerus-Bold.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+}
+
+.page-id-638675 .darkgrey {
+  background-color: #000000;
+}
+
+.page-id-638675 .white {
+  background-color: #ffcde0; /* BABY PINK */
+}
+
+.page-id-638675 .mashupgrey {
+  background-color: #8383c3; /* LAVENDER */
+}
+
+.page-id-638675 .grey {
+  background-color: #ffbc18; /* EGG YOLK */
+}
+
+.page-id-638675 .header .title h1 {
+  font-family: "helveticaneue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 120px !important;
+  line-height: 100px !important;
+  color: #e4312e;
+}
+
+.cherries {
+  max-width: 250px !important;
+}
+
+.one {
+  transform: rotateX(40deg);
+  animation: one 0.8s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes one {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(26deg);
+  }
+}
+
+.heart {
+  max-width: 250px !important;
+}
+
+.two {
+  transform: rotateX(40deg);
+  animation: one 0.8s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes two {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(26deg);
+  }
+}
+
+.stamp {
+  max-width: 250px !important;
+}
+
+.four {
+  transform: rotateX(40deg);
+  animation: one 0.8s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes four {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(26deg);
+  }
+}
+
+.page-id-638675 .header .subtitle h2 {
+  font-family: helveticaneue;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 70px;
+  color: #e4312e;
+}
+
+.page-id-638675 .rowtitle,
+.page-id-638675 .rowtitles .lighttext {
+  font-family: helveticaneue;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 68px;
+  line-height: 68px;
+  color: #fff;
+}
+
+.page-id-638675 .mashupgrey .rowtitle,
+.page-id-638675 .mashupgrey .rowtitles .lighttext {
+  color: #e4312e; /* CHERRY RED */
+}
+
+.page-id-638675 .rowsubtitle,
+.page-id-638675 .rowsubtitles .darktext {
+  font-family: helveticaneue;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.page-id-638675 .darkgrey .rowsubtitle,
+.page-id-638675 .darkgrey .rowsubtitles .darktext {
+  color: #e4312e;
+}
+
+.page-id-638675 .mashupgrey .rowsubtitle,
+.page-id-638675 .mashupgrey .rowsubtitles .darktext {
+  color: #e4312e; /* CHERRY RED */
+}
+
+.page-id-638675 p,
+.page-id-638675 .rowtext {
+  font-family: helveticaneue;
+  color: #000;
+}
+
+.page-id-638675 .darkgrey p,
+.page-id-638675 .darkgrey .rowtext {
+  color: #ffcde0; /* BABY PINK */
+}
+
+.page-id-638675 .mashupgrey p,
+.page-id-638675 .mashupgrey .rowtext {
+  color: #ffcde0 !important; /* BABY PINK */
+}
+
+.page-id-638675 .button {
+  border-color: #e4312e; /* CHERRY RED */
+  background-color: #e4312e; /* CHERRY RED */
+  color: #fff;
+  font-family: "helveticaneue";
+  font-weight: bold;
+  font-size: 16px;
+  width: 250px;
+}
+
+.page-id-638675 .darkgrey .button {
+  border-color: #ffcde0; /* BABY PINK */
+  background-color: #ffcde0; /* BABY PINK */
+  color: #000;
+}
+
+.page-id-638675 .mashupgrey .button {
+  border-color: #e4312e; /* CHERRY RED */
+  background-color: #e4312e; /* CHERRY RED */
+  color: #ffcde0; /* BABY PINK */
+}
+
+.page-id-638675 .button:hover {
+  opacity: 1;
+}
+
+.shfooter {
+  background-attachment: inherit;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.page-id-638675 .footer-one {
+  font-family: "helveticaneue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 62px;
+  color: #ffcde0; /* BABY PINK */
+}
+
+.page-id-638675 .footer-two {
+  font-family: helveticaneue;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 62px;
+  line-height: 62px;
+  color: #ffcde0; /* BABY PINK */
+}
+
+.page-id-638675 .footer-line {
+  font-family: "helveticaneue";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 62px;
+  color: #ffcde0; /* BABY PINK */
+  letter-spacing: -0.07em;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 767px) {
+  .page-id-638675 .header .title h1 {
+    font-family: "helveticaneue";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .page-id-638675 .header .subtitle h2 {
+    font-family: helveticaneue;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 32px;
+  }
+
+  .page-id-638675 .footer-one {
+    font-family: "helveticaneue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .page-id-638675 .footer-two {
+    font-family: helveticaneue;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .page-id-638675 .footer-line {
+    font-family: "helveticaneue";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.07em;
+  }
+}
+
+.shfc-october .lighttext {
+  font-size: 48px !important;
+}
+
+.shfc-october .darktext {
+  color: #d34329;
+}
+
+.shfc-october .button {
+  color: #ffffff;
+  background-color: #d34329;
+  border: none;
+}
+
+/* Australia Signup Page | JN 8Nov */
+
+.page-id-640930 #mc_embed_signup .button {
+  font-family: "Gotham SSm A", "Gotham SSm B", Gotham, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 5px 10px 0;
+  display: inline-block;
+  position: relative;
+  background: 0 0;
+  color: #898989;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(137, 137, 137, 0.5);
+  padding-top: 15px;
+  padding-bottom: 30px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 25px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.page-id-640930 .button {
+  float: left;
+}
+
+/* Australia Sign Up */
+.page-id-640930 .imageblock-container .header {
+  min-height: auto;
+}
+
+.page-id-640930 #mc_embed_signup input {
+  background-color: #f2f2f2;
+}
+
+/* Easter 2023 */
+
+.page-id-648206 {
+  font-family: helvetica !important;
+}
+.page-id-648206 .headerwithvideo .headervideo {
+  display: block;
+  height: auto;
+}
+.page-id-648206 .title h1 {
+  font-family: helvetica !important;
+  font-size: 60px !important;
+  line-height: 63px !important;
+  font-weight: normal !important;
+}
+
+.page-id-648206 .rowtitle {
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: normal;
+}
+
+.page-id-648206 .knowhim {
+  background-color: #e5312e;
+}
+
+.page-id-648206 .knowhim .lines {
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+}
+
+.page-id-648206 .ourjourney .section-row {
+  padding: 300px 0;
+}
+
+.page-id-648206 .ourjourney .lines {
+  position: absolute;
+  bottom: -50px;
+  left: 100px;
+}
+
+.page-id-648206 .ourjourney .rowsubtitle .darktext {
+  overflow: hidden;
+}
+
+.page-id-648206 .servicetimes .lighttext {
+  color: #e5312e;
+}
+
+.page-id-648206 .goodfriday .lighttext {
+  color: #e5312e;
+  text-align: left;
+}
+
+.page-id-648206 .goodfriday .rowtitles {
+  margin: 0;
+}
+
+.page-id-648206 .goodfriday .grid.row {
+  color: #000;
+}
+
+.page-id-648206 .goodfriday .collapsible-content .title {
+  color: #464646;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.page-id-648206 .goodfriday .reveal.opened {
+  height: auto !important;
+  line-height: 51px;
+  width: auto;
+  font-size: 35px;
+}
+
+.page-id-648206 .bignumbers .lighttext {
+  color: #e5312e;
+}
+
+.page-id-648206 .bignumbers .rowtitles {
+  width: auto;
+}
+
+.page-id-648206 .bignumbers .darktext {
+  color: #000;
+  font-weight: 500;
+  font-size: 300px;
+  top: 113px;
+  position: relative;
+}
+
+.page-id-648206 .collage {
+  background-attachment: inherit !important;
+  padding: 220px;
+  position: relative;
+}
+
+@media only screen and (max-width: 789px) {
+  .page-id-648206 .knowhim .lines {
+    left: -9px;
+    max-width: 99px;
+  }
+
+  .page-id-648206 .rowtitle {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .page-id-648206 .goodfriday .collapsible-content .title {
+    font-size: 31px;
+  }
+
+  .page-id-648206 .goodfriday .reveal.opened {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .page-id-648206 .ourjourney .section-row {
+    height: 90vw;
+  }
+
+  .page-id-648206 .ourjourney .lines {
+    left: -9px;
+    max-width: 99px;
+  }
+
+  .page-id-648206 .bignumbers .darktext {
+    font-size: 86px;
+    top: 70px;
+  }
+
+  .page-id-648206 .collage {
+    padding: 180px;
+  }
+}
+
+/* Popup */
+.hillsong-row.imagecomponent {
+  position: relative;
+}
+.popup-opener {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+}
+.hillsong-popup {
+  display: none;
+  background: #fff;
+  width: 100% !important;
+  height: 50% !important;
+  max-width: 600px;
+  max-height: 400px;
+  padding: 20px;
+}
+.hillsong-popup .fluidVideo {
+  padding-top: 0px;
+}
+.hillsong-popup .fluidVideo video {
+  width: 100% !important;
+}
