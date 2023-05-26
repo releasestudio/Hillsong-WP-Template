@@ -7,25 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-        .hfth-23-campus-initiative.campus-card {
-            display: none;
-            opacity: 0;
-            transition: 0.5s;
+        /* Header */
+        .h4th-clem-header-logo2 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
         }
 
-        .hfth-23-campus-initiative.container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        .h4th-clem-header-logo2 img {
+            width: 80%;
+            max-width: 1000px;
         }
 
-        .h4th-clem-local-initiatives {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        /* Ways to give Section */
+        #newwaystogive .button {
+            min-width: 180px;
+            background-color: #3032DC;
+            color: #fff;
+            border: 2px solid #ffffff;
+        }
+
+        #newwaystogive .button:hover {
+            background-color: #fff;
+            color: #3032DC;
+            border: 2px solid #3032DC;
+            opacity: 1;
+        }
+
+        /* Entire Video Selection Module */
+        #H4THClemHeaderRow .section-row {
+            padding: 0 10px 100px 10px !important;
+        }
+
+        #ClemH4thVideoSelect .section-row {
+            padding: 50px 40px 0px 40px !important;
         }
 
         .hfth-23-campus-initiative.sec-center {
@@ -40,13 +55,13 @@
             z-index: 200;
         }
 
+        /* Video Selection Button */
         .hfth-23-campus-initiative.dropdown-buton {
             text-decoration: none;
             position: relative;
             height: fit-content;
             padding: 15px 25px;
             transition: all 200ms linear;
-
             white-space: nowrap;
             display: -webkit-inline-flex;
             display: -ms-inline-flexbox;
@@ -64,7 +79,7 @@
             background-color: #3032DC;
             border: solid 1px #3032DC;
             border-radius: 50px;
-            min-width: 250px;
+            width: 350px;
             font-family: proxima-nova, sans-serif;
             font-size: 18px;
             line-height: 20px;
@@ -82,6 +97,25 @@
             background-color: #fff;
         }
 
+        /*       .hfth-23-campus-initiative.dropdown-buton:focus {
+            animation: bubble ease 0.1s forwards;
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: scale(1);
+            }
+
+            80% {
+                transform: scale(1.03);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        } */
+
+        /* Menu */
         .hfth-23-campus-initiative.section-dropdown {
             position: absolute;
             top: 55px;
@@ -122,32 +156,40 @@
             -ms-flex-pack: distribute;
             cursor: pointer;
         }
+
         span.hfth-23-campus-initiative:hover {
             color: #fff;
             margin: 0;
             background-color: #3032DC;
         }
 
-        #H4THClemHeaderRow .section-row {
-            padding: 0 10px 100px 10px !important;
-        }
-
-        #ClemH4thVideoSelect .section-row {
-            padding: 30px 0 !important;
-        }
-
+        /* Video Cards */
         .hfth-23-campus-initiative.campus-card {
-            width: 100%;
+            display: none;
+            opacity: 0;
+            transition: 1s;
         }
 
-        .hfth-23-campus-initiative p{
-            margin: 0;
+        .hfth-23-campus-initiative.container {
+            display: flex;
+            justify-content: center;
+            height: 0;
+            transition: 0.3s ease-in-out;
         }
+
+        .hfth-23-campus-initiative.container.for-display {
+            height: 450px;
+        }
+
 
         .hfth-23-campus-initiative.campus-card iframe {
             margin-top: 20px;
             width: 640px;
             height: 360px;
+        }
+
+        .hfth-23-campus-initiative p {
+            margin: 0;
         }
 
         @media (max-width: 600px) {
@@ -156,8 +198,11 @@
                 width: 300px;
                 height: 169px;
             }
-        }
 
+            .hfth-23-campus-initiative.container.for-display {
+                height: 250px;
+            }
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -165,6 +210,7 @@
             var dropdownMenu = document.querySelector(".hfth-23-campus-initiative.section-dropdown");
             var links = document.querySelectorAll(".hfth-23-campus-initiative.section-dropdown span");
             var cards = document.querySelectorAll(".hfth-23-campus-initiative.campus-card");
+            var container = document.querySelector(".hfth-23-campus-initiative.container")
 
             function showMenu() {
                 dropdownMenu.style.opacity = "1";
@@ -197,8 +243,13 @@
             function showCard(cardId) {
                 var card = document.getElementById(cardId);
                 if (card) {
-                    card.style.display = "block";
-                    card.style.opacity = 1;
+                    container.classList.add("for-display");
+                    setTimeout(() => {
+                        card.style.display = "block";
+                    }, 300);
+                    setTimeout(() => {
+                        card.style.opacity = 1;
+                    }, 500);
                 }
             }
 
@@ -452,7 +503,11 @@
         </div>
 
     </div>
-<p style="margin:0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates aspernatur, nemo fugit numquam mollitia modi nobis, quod illo, repellendus odio ex totam? Ipsa adipisci possimus consequatur enim tenetur? Dicta.</p>
+    <div>
+        <p style="margin:0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates aspernatur, nemo
+            fugit numquam mollitia modi nobis, quod illo, repellendus odio ex totam? Ipsa adipisci possimus consequatur
+            enim tenetur? Dicta.</p>
+    </div>
 </body>
 
 </html>

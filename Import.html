@@ -1,0 +1,257 @@
+<link rel="stylesheet" href="https://use.typekit.net/skh5fdt.css">
+
+<style>
+    /* Header */
+    .h4th-clem-header-logo2 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h4th-clem-header-logo2 img {
+        width: 80%;
+        max-width: 1000px;
+    }
+
+    /*Selection Module */
+    #H4THClemHeaderRow .section-row {
+        padding: 0 10px 100px 10px !important;
+    }
+
+    #ClemH4thVideoSelect .section-row {
+        padding: 50px 40px 0px 40px !important;
+    }
+
+    #newwaystogive .button {
+        min-width: 180px;
+        background-color: #3032DC;
+        color: #fff;
+        border: 2px solid #ffffff;
+    }
+
+    #newwaystogive .button:hover {
+        background-color: #fff;
+        color: #3032DC;
+        border: 2px solid #3032DC;
+        opacity: 1;
+    }
+
+    .hfth-23-campus-initiative.sec-center {
+        font-family: helvetica;
+        font-weight: normal;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 200;
+    }
+
+    /* Video Selection Button */
+    .hfth-23-campus-initiative.dropdown-buton {
+        text-decoration: none;
+        position: relative;
+        height: fit-content;
+        padding: 15px 25px;
+        transition: all 200ms linear;
+        white-space: nowrap;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: block;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -ms-flex-pack: center;
+        color: #fff;
+        background-color: #3032DC;
+        border: solid 1px #3032DC;
+        border-radius: 50px;
+        min-width: 250px;
+        font-family: proxima-nova, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: .02em;
+        font-weight: 600;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .hfth-23-campus-initiative.dropdown-buton:hover {
+        color: #3032DC;
+        background-color: #fff;
+    }
+
+    .hfth-23-campus-initiative.section-dropdown {
+        position: absolute;
+        top: 55px;
+        padding: 5px;
+        background-color: #ffffff;
+        width: 280px;
+        max-height: 320px;
+        overflow: scroll;
+        border-radius: 4px;
+        display: block;
+        box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 200ms linear;
+    }
+
+    span.hfth-23-campus-initiative {
+        position: relative;
+        color: #3032DC;
+        transition: all 200ms linear;
+        font-size: 15px;
+        border-radius: 2px;
+        padding: 5px 0;
+        padding-left: 20px;
+        padding-right: 15px;
+        margin: 2px 0;
+        text-align: left;
+        text-decoration: none;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: space-between;
+        -ms-flex-pack: distribute;
+        cursor: pointer;
+    }
+
+    span.hfth-23-campus-initiative:hover {
+        color: #fff;
+        margin: 0;
+        background-color: #3032DC;
+    }
+
+    /* Video Cards */
+    .hfth-23-campus-initiative.campus-card {
+        display: none;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .hfth-23-campus-initiative.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h4th-clem-local-initiatives {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hfth-23-campus-initiative.campus-card {
+        width: 100%;
+    }
+
+    .hfth-23-campus-initiative.campus-card iframe {
+        margin-top: 20px;
+        width: 640px;
+        height: 360px;
+    }
+
+    .hfth-23-campus-initiative p {
+        margin: 0;
+    }
+
+    @media (max-width: 600px) {
+        .h4th-clem-header-logo {
+            height: 300px;
+            background-size: auto 400px;
+        }
+
+        .h4th-clem-header-date {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(-25px);
+            width: 100px
+        }
+
+        .hfth-23-campus-initiative.campus-card iframe {
+            width: 300px;
+            height: 169px;
+        }
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var dropdownButton = document.getElementById("dropdown-button");
+        var dropdownMenu = document.querySelector(".hfth-23-campus-initiative.section-dropdown");
+        var links = document.querySelectorAll(".hfth-23-campus-initiative.section-dropdown span");
+        var cards = document.querySelectorAll(".hfth-23-campus-initiative.campus-card");
+
+        function showMenu() {
+            dropdownMenu.style.opacity = "1";
+            dropdownMenu.style.pointerEvents = "auto";
+            dropdownMenu.style.transform = "translateY(0)";
+        }
+
+        function hideMenu() {
+            dropdownMenu.style.opacity = "0";
+            dropdownMenu.style.pointerEvents = "none";
+            dropdownMenu.style.transform = "translateY(20px)";
+        }
+
+        dropdownButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            if (dropdownMenu.style.opacity == 0) {
+                showMenu();
+            } else {
+                hideMenu()
+            }
+        });
+
+
+        function hideCards() {
+            cards.forEach(function (card) {
+                card.style.display = "none";
+            });
+        }
+
+        function showCard(cardId) {
+            var card = document.getElementById(cardId);
+            if (card) {
+                card.style.display = "block";
+                card.style.opacity = 1;
+            }
+        }
+
+        links.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                hideCards();
+                var selectedLinkId = link.getAttribute("key");
+                showCard(selectedLinkId);
+                hideMenu();
+            });
+        });
+
+        document.addEventListener("click", (evt) => {
+            let targetEl = evt.target; // clicked element   
+            if (targetEl.parentNode !== dropdownMenu && targetEl !== dropdownButton) {
+                // This is a click inside, does nothing, just return.
+                hideMenu()
+                console.log(targetEl)
+                console.log(dropdownButton)
+            }
+        });
+    })
+</script>
