@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
         .h4th-clem-header-logo {
             position: relative;
             background-image: url("https://cdn.hillsong.com/wp-content/uploads/sites/5/2023/05/16093729/H4TH-2023-Header.gif");
@@ -26,8 +25,52 @@
             justify-content: center;
             border: 1px solid blue;
         }
-        .h4th-clem-header-logo2 img{
-            width:80%;
+
+        #H4THClemHeaderRow a {
+            text-decoration: none;
+            position: relative;
+            height: fit-content;
+            padding: 15px 25px;
+            transition: all 200ms linear;
+
+            white-space: wrap;
+            max-width: 95vw;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: block;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+            -ms-flex-pack: center;
+            color: #fff;
+            background-color: #3032DC;
+            border: solid 1px #3032DC;
+            border-radius: 50px;
+            min-width: 250px;
+            font-family: proxima-nova, sans-serif;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: .02em;
+            font-weight: 600;
+            font-style: normal;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #H4THClemHeaderRow a:hover {
+            color: #3032DC;
+            background-color: #fff;
+        }
+
+        .h4th-clem-header-logo2 img {
+            width: 80%;
             max-width: 1000px;
             border: 1px solid blue;
         }
@@ -44,6 +87,7 @@
                 height: 300px;
                 background-size: auto 400px;
             }
+
             .h4th-clem-header-date {
                 position: absolute;
                 bottom: 0;
@@ -53,7 +97,7 @@
         }
     </style>
     <script>
-      
+
     </script>
 </head>
 
@@ -61,9 +105,13 @@
     <!--   <div class="h4th-clem-header-logo"><img class="h4th-clem-header-date"
             src="https://cdn.hillsong.com/wp-content/uploads/sites/5/2023/05/19054655/hfth23-18062023-logo.png" alt="">
     </div> -->
-        <div class="h4th-clem-header-logo2">
-            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/5/2023/05/25053225/HSTH23-logo-25may.png" alt="">
+    <div class="h4th-clem-header-logo2">
+        <img src="https://cdn.hillsong.com/wp-content/uploads/sites/5/2023/05/25053225/HSTH23-logo-25may.png" alt="">
+        <div id="H4THClemHeaderRow">
+            <a>Test with a very long name for test purposes</a>
+        </div>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem, optio culpa pariatur soluta in vitae voluptates eos quam excepturi qui eaque nobis? Placeat dolore porro magnam nihil dolor consectetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem, optio culpa pariatur soluta in vitae
+        voluptates eos quam excepturi qui eaque nobis? Placeat dolore porro magnam nihil dolor consectetur?</p>
 
 </html>

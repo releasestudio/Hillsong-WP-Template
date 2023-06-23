@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .conf23-slide-show-container {
+            position: relative;
+            height: 70vh;
+            width: 100%;
+            font-family: Maison Neue;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .conf23-slide-show-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 2;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .gradient {
+            position: absolute;
+            z-index: 10;
+            background-image: linear-gradient(to bottom, #16166900, #161669);
+            height: 50%;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .conf23-slide-show-container h3 {
+            position: absolute;
+            z-index: 11;
+            color: white;
+            bottom: 24px;
+            max-width: 30%;
+            left: 24px;
+            text-align: left;
+            font-weight: 800;
+            font-size: 2.5vw;
+            line-height: 2.6vw;
+        }
+
+        .conf23-slide-show-container h1 {
+            position: absolute;
+            z-index: 11;
+            color: white;
+            bottom: 24px;
+            max-width: 50%;
+            right: 24px;
+            text-align: right;
+            font-weight: 800;
+            font-size: 3.4vw;
+            line-height: 3.7vw;
+
+        }
+
+        @media (min-width: 1600px) {
+            .conf23-slide-show-container h1 {
+                font-size: 3.4rem;
+                line-height: 3.8rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 2.5rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .conf23-slide-show-container {
+                height: 40vh;
+            }
+
+            .conf23-slide-show-container h1 {
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .conf23-slide-show-container {
+                height: 40vh;
+            }
+
+            .conf23-slide-show-container h1 {
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-id-1234">
+    <div class="hsc23-family-container">
+
+        <div class="conf23-slide-show-container">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/06/27101022/HSC23-Kids-HeaderBW.jpg"
+                alt="Hillsong Conference Families Picture 1">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/2019/09/17053818/YFC19-30.png"
+                alt="Hillsong Conference Families Picture 2">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/06/27022817/HSC23-Kidsong2-700x700.jpg"
+                alt="Hillsong Conference Families Picture 3">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/2019/09/17053811/YFC19-21.png"
+                alt="Hillsong Conference Families Picture 4">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/06/27022813/HSC23-Kidsong1-700x700.jpg"
+                alt="Hillsong Conference Families Picture 5">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/2019/09/17053604/YFC19-1.png"
+                alt="Hillsong Conference Families Picture 6">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/06/27022820/HSC23-Kidsong3-700x700.jpg"
+                alt="Hillsong Conference Families Picture 7">
+            <div class="gradient"></div>
+            <h1>A life changing conference for the whole family</h1>
+            <h3>HELP YOUR KIDS FIND THEIR FIRST LOVE</h3>
+        </div>
+        <div class="hsc23-special-price-container">.
+
+        </div>
+        <h3>Take advantage of our Family Discount</h3>
+        <p>Register 2 adults and 1 child (Kidsong or Y&F) at full price, and receive the second, third and fourth
+            Kidsong and/or Y&F registrations for only $49 each. Eligible to immediate family only. Must be completed in
+            the same transaction.</p>
+            <p>Bring the whole family</p>
+            <button>Register</button>
+    </div>
+
+
+    <script>
+        const slideshowContainer = document.querySelector(".conf23-slide-show-container");
+        const images = slideshowContainer.querySelectorAll("img");
+
+        let currentIndex = 0;
+        let currentOpacity = 0;
+
+        function switchImageOpacity() {
+            images[currentIndex].style.opacity = currentOpacity;
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].style.opacity = 1;
+            images[(currentIndex + images.length - 1) % images.length].style.opacity = 0;
+
+            currentOpacity = 1 - currentOpacity;
+        }
+
+        images[0].style.opacity = 1;
+
+        setInterval(switchImageOpacity, 2000);
+    </script>
+
+</body>
+
+</html>

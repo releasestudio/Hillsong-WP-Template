@@ -39,6 +39,12 @@
             padding: 0 10px 100px 10px !important;
         }
 
+        @media only screen and (min-width: 979px) {
+            .h4th-clem-local-initiatives .rowtitles {
+                width: 100%;
+            }
+        }
+
         #ClemH4thVideoSelect .section-row {
             padding: 50px 40px 0px 40px !important;
         }
@@ -191,7 +197,7 @@
         .hfth-23-campus-initiative p {
             margin: 0;
         }
-
+/* Non Active */
         @media (max-width: 600px) {
 
             .hfth-23-campus-initiative.campus-card iframe {
@@ -293,18 +299,22 @@
         </div>
 
         <div class="hfth-23-campus-initiative sec-center">
-            <button id="dropdown-button" class="hfth-23-campus-initiative dropdown-buton">Click here to see all
-                Initiatives</button>
+            <button id="dropdown-button" class="hfth-23-campus-initiative dropdown-buton">VIEW ALL LOCAL
+                INITIATIVES</button>
             <div class="hfth-23-campus-initiative section-dropdown">
                 <span class="hfth-23-campus-initiative" key="Alexandria">Sydney Alexandria</span><span
+                class="hfth-23-campus-initiative" key="BondiCampus">Bondi</span><span
                     class="hfth-23-campus-initiative" key="BrisbaneCentral">Brisbane Central</span><span
                     class="hfth-23-campus-initiative" key="BrisbaneDowntown">Brisbane Downtown</span><span
                     class="hfth-23-campus-initiative" key="DarwinCampus">Darwin</span><span
+                    class="hfth-23-campus-initiative" key="GeelongCampus">Geelong</span><span
                     class="hfth-23-campus-initiative" key="GoldCoastNorth">Gold Coast North</span><span
                     class="hfth-23-campus-initiative" key="GreaterSpringfield">Greater Springfield</span><span
                     class="hfth-23-campus-initiative" key="GreaterWestSydney">Greater West Sydney</span><span
                     class="hfth-23-campus-initiative" key="HillsCampus">Sydney Hills</span><span
+                    class="hfth-23-campus-initiative" key="HobartCampus">Hobart</span><span
                     class="hfth-23-campus-initiative" key="InnerWestCampus">Sydney Inner West</span><span
+                    class="hfth-23-campus-initiative" key="MacquarieCampus">Macquarie</span><span
                     class="hfth-23-campus-initiative" key="MelbourneCityCampus">Melbourne City</span><span
                     class="hfth-23-campus-initiative" key="MelbourneEastCampus">Melbourne East</span><span
                     class="hfth-23-campus-initiative" key="MelbourneGreaterWest">Melbourne Greater West</span><span
@@ -314,8 +324,10 @@
                     class="hfth-23-campus-initiative" key="NoosaCampus">Noosa</span><span
                     class="hfth-23-campus-initiative" key="NorthShoreCampus">North Shore</span><span
                     class="hfth-23-campus-initiative" key="NorthernBeachesCampus">Northern Beaches</span><span
+                    class="hfth-23-campus-initiative" key="PerthCampus">Perth</span><span
                     class="hfth-23-campus-initiative" key="SouthWestCampus">South West</span><span
                     class="hfth-23-campus-initiative" key="SunshineCoastSouth">Sunshine Coast South</span><span
+                    class="hfth-23-campus-initiative" key="WaterlooCampus">Waterloo</span><span
                     class="hfth-23-campus-initiative" key="WollongongCampus">Wollongong</span>
             </div>
         </div>
@@ -325,180 +337,164 @@
                 <iframe src="https://player.vimeo.com/video/828243062?h=1d102ebd76" frameborder="0"
                     allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Alexandria Campus</strong></br>Georg
-                    &amp; Nat Pingel
-                </p>
+                    <strong>Alexandria Campus</strong></br>Georg &amp; Nat Pingel</p>
             </div>
 
-            <div id="Bondi" class="hfth-23-campus-initiative campus-card">
+            <div id="BondiCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828243655?h=6f95a0a7d3" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Bondi Campus</strong></br>Barak
-                    &amp; Joelle Pauls
-                </p>
+                    <strong>Bondi Campus</strong></br>Barak &amp; Joelle Pauls</p>
             </div>
 
             <div id="BrisbaneCentral" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242540?h=cab44eab33" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Brisbane Central
-                        Campus</strong></br>Nick &amp; Sarah Khiroya
-                </p>
+                    <strong>Brisbane Central Campus</strong></br>Nick &amp; Sarah Khiroya</p>
             </div>
             <div id="BrisbaneDowntown" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242439?h=06125cf183" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Brisbane Downtown
-                        Campus</strong></br>John &amp; Sarah Sparey
-                </p>
+                    <strong>Brisbane Downtown Campus</strong></br>John &amp; Sarah Sparey</p>
             </div>
             <div id="DarwinCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828243234?h=4492f7f5d8" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Darwin Campus</strong></br>Paul
-                    Glass
-                </p>
+                    <strong>Darwin Campus</strong></br>Paul Glass</p>
+            </div>
+            <div id="GeelongCampus" class="hfth-23-campus-initiative campus-card">
+                <iframe src="https://player.vimeo.com/video/832539778?h=985d6eb765" width="640" height="360"
+                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
+                    <strong>Geelong Campus</strong></br>Joel Feebrey</p>
             </div>
             <div id="GoldCoastNorth" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242497?h=0c8714d376" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;"><strong>Gold
-                        Coast North
-                        Campus</strong></br>Daniel
-                    &amp; Lauren Kahika</p>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
+                    <strong>Gold Coast North Campus</strong></br>Daniel &amp; Lauren Kahika</p>
             </div>
             <div id="GreaterSpringfield" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242323?h=b43b641437" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Greater Springfield
-                        Campus</strong></br>Andrew &amp;
-                    Crystal Midson
-                </p>
+                    <strong>Greater Springfield Campus</strong></br>Andrew &amp; Crystal Midson</p>
             </div>
             <div id="GreaterWestSydney" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242388?h=e1c47ecd78" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Greater West Sydney</strong></br>Jay
-                    &amp; Chris
-                    Jury
-                </p>
+                    <strong>Greater West Sydney</strong></br>Jay &amp; Chris Jury</p>
             </div>
             <div id="HillsCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828239607?h=3e6e19cc57" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Hills Campus</strong></br>Sam &amp;
-                    Kylie Di Mauro
-                </p>
+                    <strong>Hills Campus</strong></br>Sam &amp; Kylie Di Mauro</p>
+            </div>
+            <div id="HobartCampus" class="hfth-23-campus-initiative campus-card">
+                <iframe src="https://player.vimeo.com/video/832539545?h=6f3b731486" width="640" height="360"
+                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
+                    <strong>Hobart Campus</strong></br>Eddie &amp;Rachel Parker</p>
             </div>
             <div id="InnerWestCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242971?h=0c29bd340a" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Inner West Campus</strong></br>Druvi
-                    &amp; Anita Perera
-                </p>
+                    <strong>Inner West Campus</strong></br>Druvi &amp; Anita Perera</p>
+            </div>
+            <div id="MacquarieCampus" class="hfth-23-campus-initiative campus-card">
+                <iframe src="https://player.vimeo.com/video/833566854?h=3fbed556fa" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
+                    <strong>Macquarie Campus</strong></br>Tom &amp; Angela Bachtle</p>
             </div>
             <div id="MelbourneCityCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242743?h=16b2acdfa8" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Melbourne City
-                        Campus</strong></br>Dean &amp; Rachel Ussher
-                </p>
+                    <strong>Melbourne City Campus</strong></br>Dean &amp; Rachel Ussher</p>
             </div>
             <div id="MelbourneEastCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242658?h=558a0bf0d7" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Melbourne East
-                        Campus</strong></br>Dale &amp; Andrea Simons
-                </p>
+                    <strong>Melbourne East Campus</strong></br>Dale &amp; Andrea Simons</p>
             </div>
             <div id="MelbourneGreaterWest" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242179?h=48c4659554" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Melbourne Greater West
-                        Campus</strong></br>Peter &amp; Sheridan Stavrou
-                </p>
+                    <strong>Melbourne Greater West Campus</strong></br>Peter &amp; Sheridan Stavrou</p>
             </div>
             <div id="MelbourneWest" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242713?h=1839ea886b" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;"><strong>
-                        Melbourne West
-                        Campus</strong></br>Nigel &amp; Kathryn Ram</p>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
+                    <strong>Melbourne West Campus</strong></br>Nigel &amp; Kathryn Ram</p>
             </div>
             <div id="MerrylandsCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242924?h=44fba01ae7" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Merrylands Campus</strong></br>Bryan
-                    &amp; Chloe Campos
-                </p>
+                    <strong>Merrylands Campus</strong></br>Bryan &amp; Chloe Campos</p>
             </div>
             <div id="NewcastleCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828243121?h=0f7e2f42c1" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Newcastle Campus</strong></br>Scott
-                    'Sanga' &amp; Kety Samways
-                </p>
+                    <strong>Newcastle Campus</strong></br>Scott 'Sanga' &amp; Kety Samways</p>
             </div>
             <div id="NoosaCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828243160?h=4b03a65635" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Noosa Campus</strong></br>Jamie
-                    &amp; Janie Coyle
-                </p>
+                    <strong>Noosa Campus</strong></br>Jamie &amp; Janie Coyle</p>
             </div>
             <div id="NorthShoreCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242779?h=823a9b716d" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>North Shore
-                        Campus</strong></br>Allen &amp; Renee Yam
-                </p>
+                    <strong>North Shore Campus</strong></br>Allen &amp; Renee Yam</p>
             </div>
             <div id="NorthernBeachesCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242602?h=f698d2d989" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Northern Beaches
-                        Campus</strong></br>Jerry &amp; Jo Groenstyn
-                </p>
+                    <strong>Northern Beaches Campus</strong></br>Jerry &amp; Jo Groenstyn</p>
+            </div>
+            <div id="PerthCampus" class="hfth-23-campus-initiative campus-card">
+                <iframe src="https://player.vimeo.com/video/832539648?h=d861643b23" width="640" height="360"
+                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;"><strong>Perth
+                        Campus</strong></br>Andy &amp; Lauren Koblischke</p>
             </div>
             <div id="SouthWestCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242887?h=775137f625" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>South West
-                        Campus</strong></br>Nathan &amp; Jess Mclean
-                </p>
+                    <strong>South West Campus</strong></br>Nathan &amp; Jess Mclean</p>
             </div>
             <div id="SunshineCoastSouth" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242249?h=5e5f57e37f" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal; text-align: center; width: 640;">
-                    <strong>Sunshine Coast South
-                        Campus</strong></br>Emma &amp; Jared Cooke
-                </p>
+                    <strong>Sunshine Coast South Campus</strong></br>Emma &amp; Jared Cooke</p>
             </div>
             <div id="WollongongCampus" class="hfth-23-campus-initiative campus-card">
+                <iframe src="https://player.vimeo.com/video/833566817?h=c46e75a627" width="640" height="360"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <p style="font-family: helvetica; font-weight: normal;text-align: center;; width: 640;">
+                    <strong>Sydney Waterloo</strong></br>JD &amp; Lauren Douglass</p>
+            </div>
+            <div id="WaterlooCampus" class="hfth-23-campus-initiative campus-card">
                 <iframe src="https://player.vimeo.com/video/828242828?h=5e24e1ad0c" width="640" height="360"
                     frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                 <p style="font-family: helvetica; font-weight: normal;text-align: center;; width: 640;">
-                    <strong>Wollongong
-                        Campus</strong></br>Nathan &amp; Jess Mclean
-                </p>
+                    <strong>Wollongong Campus</strong></br>Nathan &amp; Jess Mclean</p>
             </div>
         </div>
 

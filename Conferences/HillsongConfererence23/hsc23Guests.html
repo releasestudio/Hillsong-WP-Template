@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-DemiItalic.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot');
+            src: url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff2') format('woff2'),
+                url('//d9nqqwcssctr8.cloudfront.net/fonts/maison-neue/MaisonNeue-Book.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .hsc23-guests-container {
+            display: flex;
+            width: 100%;
+        }
+
+        .guest-select {
+            width: 50%;
+        }
+
+        .conf23-slide-show-container {
+            position: relative;
+            height: 70vh;
+            width: 50%;
+            font-family: Maison Neue;
+        }
+
+        .conf23-slide-show-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            z-index: 2;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .gradient {
+            position: absolute;
+            z-index: 10;
+            background-image: linear-gradient(to bottom, #16166900, #161669);
+            height: 50%;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .conf23-slide-show-container h3 {
+            position: absolute;
+            z-index: 11;
+            color: white;
+            bottom: 24px;
+            max-width: 30%;
+            left: 24px;
+            text-align: left;
+            font-weight: 800;
+            font-size: 2.5vw;
+            line-height: 2.6vw;
+        }
+
+        .conf23-slide-show-container h1 {
+            position: absolute;
+            z-index: 11;
+            color: white;
+            bottom: 24px;
+            max-width: 50%;
+            right: 24px;
+            text-align: right;
+            font-weight: 800;
+            font-size: 3.4vw;
+            line-height: 3.7vw;
+
+        }
+
+        @media (min-width: 1600px) {
+            .conf23-slide-show-container h1 {
+                font-size: 3.4rem;
+                line-height: 3.8rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 2.5rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .conf23-slide-show-container {
+                height: 40vh;
+            }
+
+            .conf23-slide-show-container h1 {
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .conf23-slide-show-container {
+                height: 40vh;
+            }
+
+            .conf23-slide-show-container h1 {
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+            }
+
+            .conf23-slide-show-container h3 {
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+        }
+
+        /* change padding guests section */
+        #hsc23-guests .section-row {
+            padding-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="page-id-1234">
+    <div class="hsc23-guests-container">
+
+        <div class="guest-select">
+            <button class="martin-smith">Martin Smith</button>
+            <button class="noddy-sharma">Noddy Sharma</button>
+            <button class="tod-bolsinger">Tod Bolsinger</button>
+            <button class="actons">Emma & Rhys Acton</button>
+        </div>
+
+        <div class="conf23-slide-show-container">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/05/18020942/IMG_6120-scaled.jpg"
+                alt="Hillsong Conference Guest Martin Smith">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/06043444/HSC23-GUEST-NODDY-SHARMA_BW.jpg"
+                alt="Hillsong Conference Guest Noddy Sharma">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/06043453/HSC23-GUEST-TOD-BOLSINGER_BW.jpg"
+                alt="Hillsong Conference Guest Tod Bolsinger">
+            <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/06044235/HSC23-GUEST-EMMA-RHYS-ACTON_BW.jpg"
+                alt="Hillsong Conference Guest Emma & Rhys Acton">
+            <div class="gradient"></div>
+            <h3></h3>
+        </div>
+
+    </div>
+
+
+    <script>
+        const slideshowContainer = document.querySelector(".conf23-slide-show-container");
+        const images = slideshowContainer.querySelectorAll("img");
+
+        let currentIndex = 0;
+        let currentOpacity = 0;
+
+        function switchImageOpacity() {
+            images[currentIndex].style.opacity = currentOpacity;
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].style.opacity = 1;
+            images[(currentIndex + images.length - 1) % images.length].style.opacity = 0;
+
+            currentOpacity = 1 - currentOpacity;
+        }
+
+        images[0].style.opacity = 1;
+
+        setInterval(switchImageOpacity, 2000);
+    </script>
+
+</body>
+
+</html>
