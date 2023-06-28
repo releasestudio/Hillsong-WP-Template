@@ -382,7 +382,7 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=1.4.1"></script>
     <script type="text/javascript"
-        src="https://hillsong.com/conference/wp-content/plugins/hillsong-utilities/js/viewport_size_helper.js?ver=649501ef4675c"></script>
+        src="https://hillsong.com/conference/wp-content/plugins/hillsong-utilities/js/viewport_size_helper.js?ver=649b9b2789dd4"></script>
     <link rel="https://api.w.org/" href="https://hillsong.com/conference/wp-json/" />
     <link rel="alternate" type="application/json" href="https://hillsong.com/conference/wp-json/wp/v2/pages/632600" />
     <link rel="alternate" type="application/json+oembed"
@@ -476,8 +476,6 @@
 
 
 
-
-
     <!--------------------------------------------- Custom styles --------------------------------------------->
 
     <link rel="stylesheet" href="https://use.typekit.net/csb6ukf.css">
@@ -488,6 +486,8 @@
             --Yellow: #FAFA41;
             --green: #4BE831;
             --blue: #54A8FF;
+            --black: #000000;
+            --white: #FFFFFF;
         }
 
         body.page-id-632600 {
@@ -516,72 +516,334 @@
             color: #FE3C96;
         }
 
+        .page-id-632600 .wrapper {
+            /* max-height: 100vh;
+            overflow: scroll; */
+            scroll-snap-type: y proximity;
+        }
+
+
+
+
 
         /* Header section */
 
         .hsc-24-header {
+            scroll-snap-align: start;
             background-color: var(--purple);
+            display: grid;
+            justify-items: center;
+            padding: 3vh 0;
+            position: static;
+            min-height: calc(100vh - 78px);
+            overflow: hidden;
         }
 
-        .hsc-24-header p.rowtitle{
-            color: var(--pink);
+        .hsc-24-header h2 {
+            color: white;
             margin-bottom: 0 !important;
+            text-align: center;
+            padding-bottom: 5vh;
+            font-size: 2.5vh;
+
         }
 
-        .hsc-24-header .rowsubtitle {
+        .hsc-24-header h4 {
+            color: white;
+            margin-bottom: 0 !important;
+            text-align: center;
+            padding-bottom: 5vh;
+            font-size: 1.6vh;
+            line-height: 2.2vh;
+        }
 
-            font-size: 150px;
-            font-weight: 800;
-            line-height: 180px;
+        .hsc-24-header .always-joy-text-logo {
+            width: 40vh;
+            padding: 0 1vh 1vh 1vh;
+        }
+
+        .always-joy-emblem-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 50vh;
+            width: 100vw;
+        }
+
+        .always-joy-emblem-1 img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 54vh;
+            object-fit: cover;
+        }
+
+        .always-joy-emblem-1 img.emblem-1-pink {
+            transform: translate(-50%, -50%);
+            animation: emblem-rotation-reverse 50s infinite linear;
+        }
+
+        @keyframes emblem-rotation-reverse {
+            0% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+
+        .always-joy-emblem-1 img.emblem-1-white {
+            transform: translate(-50%, -50%) rotate(10deg)scale(0.7);
+            animation: emblem-rotation 60s infinite linear;
+        }
+
+        @keyframes emblem-rotation {
+            0% {
+                transform: translate(-50%, -48%) rotate(0deg)scale(0.7);
+            }
+
+            50% {
+                transform: translate(-50%, -52%) rotate(180deg)scale(0.73);
+            }
+
+            100% {
+                transform: translate(-50%, -48%) rotate(360deg)scale(0.7);
+            }
+        }
+
+        .hsc-24-header img.hsc-24-logo {
+            width: 9vh;
+            margin: 0 auto;
+            padding-top: 7vh;
+        }
+
+        @media (max-width: 768px) {
+            .always-joy-emblem-1 {
+                width: 80vw;
+                height: 80vw;
+                object-fit: cover;
+            }
+
+            .always-joy-emblem-1 img {
+                width: 80vw;
+                height: 80vw;
+                object-fit: cover;
+            }
+
+        }
+
+
+
+
+        /* Verse Section */
+        .hsc-24-verse {
+            scroll-snap-align: start;
+            background-color: var(--blue);
+            color: var(--Yellow);
+            padding: 7vh 2rem;
+            min-height: calc(100vh - 78px);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .hsc-24-verse {
+            background-color: var(--blue);
+            color: var(--Yellow);
+        }
+
+        .hsc-24-verse .verse {
+            font-size: 3.4rem;
+            line-height: 3.8rem;
+        }
+
+        .hsc-24-verse h4 {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+
+        .hsc-24-verse h4.verse-ref {
+            margin-bottom: 60px;
+        }
+
+        .hsc-24-verse .joy-quote {
+            font-size: 2.9rem;
+            line-height: 3.3rem;
+            text-align: right;
+        }
+
+        .hsc-24-verse h4.author-quote {
+            text-align: right;
+        }
+
+        .hsc-24-verse span {
+            background: linear-gradient(90deg, var(--white) 0%, var(--white) 50%, var(--Yellow) 50%, var(--Yellow) 100%);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            background-image: url("https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/23063222/Purple-and-pink-crowd.jpg");
-            background-size: cover;
-            background-position-y: -300px;
-            background-position-x: -70px;
-            background-attachment: fixed;
-            margin-bottom: 0 !important;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 275ms ease;
         }
 
-        .hsc-24-header .rowtext p {
-            color: var(--blue);
-            margin-bottom: 0 !important;
-            text-transform: capitalize;
-            letter-spacing: 3px;
+        .hsc-24-verse iframe {
+            margin: 3vh auto 0 auto;
+
         }
 
 
+        @media (max-width: 768px) {
+            .hsc-24-verse .verse {
+                font-size: 2.1rem;
+                line-height: 2.5rem;
+            }
 
-        /* Lead pastors section */
+            .hsc-24-verse h4 {
+                font-size: 1rem;
+                line-height: 1.4rem;
+            }
+
+            .hsc-24-verse h4.verse-ref {
+                margin-bottom: 60px;
+            }
+
+            .hsc-24-verse .joy-quote {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                text-align: right;
+            }
+
+            .hsc-24-verse h4.author-quote {
+                text-align: right;
+            }
+
+            .hsc-24-verse iframe {
+                width: 100%;
+                max-height: 20vh;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        /* Lead pastors section --------------------------------------------------------------------------------------------------*/
         .hsc-24-lead-pastors {
+            scroll-snap-align: start;
+            position: relative;
             background-color: var(--Yellow);
         }
 
         .hsc-24-lead-pastors p.rowtitle {
-            text-align: left;
+            position: relative;
+            z-index: 10;
             font-weight: 800;
-            font-size: 50px;
+            font-size: 4rem;
+            line-height: 4.5rem;
             color: var(--pink);
             padding: 0;
             margin-top: 20px;
             text-align: center;
         }
 
-        .hsc-24-lead-pastors iframe {
-            border-radius: 20px;
+        .hsc-24-lead-pastors .college-text {
+            max-width: 95%;
+        }
+        .hsc-24-lead-pastors .grid .hillsong-row{
+            margin-bottom: 0;
         }
 
 
-        .hsc-24-lead-pastors div.iconcomponent-text {
-            text-align: left;
-            color: var(--pink);
+        .hsc-24-lead-pastors .college-text p {
+            position: relative;
+            z-index: 10;
+            color: var(--black);
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            
         }
+
+
+        .hsc-24-lead-pastors .hsc-24-spining-emblem-4 {
+            --emblem-width: 50vh;
+            position: absolute;
+            top: calc(50% - (var(--emblem-width) / 2));
+            left: calc(50% - (var(--emblem-width) / 2));
+            height: var(--emblem-width);
+            animation: emblem-4-rotation 20s infinite linear;
+            opacity: 0.4;
+            z-index: 0;
+        }
+
+        .hsc-24-lead-pastors .hsc-24-spining-emblem-4 img {
+            height: 100%;
+
+        }
+
+        @keyframes emblem-4-rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .hsc-24-lead-pastors .hsc-24-spining-emblem-4 img.emblem-4-pink-layer-1 {}
+
+        .hsc-24-lead-pastors .hsc-24-spining-emblem-4 img.emblem-4-pink-layer-2 {
+            position: absolute;
+            top: 13%;
+            left: 23%;
+        }
+
+        .hsc-24-lead-pastors .hsc-24-spining-emblem-4 img.emblem-4-pink-layer-3 {
+            position: absolute;
+            top: 23%;
+            left: 43%;
+        }
+
+
+        @media (max-width: 768px) {
+            .hsc-24-lead-pastors .hsc-24-spining-emblem-4 {
+                position: relative;
+                margin: 0 auto;
+                --emblem-width: 50vw;
+                top: 0;
+                left: 0;
+
+            }
+
+        }
+
+
+
+
 
 
 
         /* Family Section */
         .hsc-24-slide-show-container {
+            scroll-snap-align: start;
             position: relative;
             height: 70vh;
             width: 100%;
@@ -614,7 +876,7 @@
         .hsc-24-slide-show-container h3 {
             position: absolute;
             z-index: 11;
-            color: var(--green);
+            color: var(--Yellow);
             bottom: 24px;
             max-width: 30%;
             left: 24px;
@@ -627,7 +889,7 @@
         .hsc-24-slide-show-container h1 {
             position: absolute;
             z-index: 11;
-            color: var(--green);
+            color: var(--Yellow);
             bottom: 24px;
             max-width: 50%;
             right: 24px;
@@ -700,21 +962,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
 </head>
 
 <body
     class="page-template-default page page-id-632600 logged-in admin-bar no-customize-support browser-Safari browser-Safari-15-6-1 Mac Mac-10-15-7 desktop Apple "
     ng-app="hillsongGiving">
-    <script id="649501ef4989a">inject_viewport_size($("#649501ef4989a"))</script>
+    <script id="649b9b278d0d5">inject_viewport_size($("#649b9b278d0d5"))</script>
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJZ4GL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -722,7 +975,7 @@
     <div class="nav-mobile">
         <div class="nav-mobile-logo">
             <a href="https://hillsong.com/conference/twentyfour/">
-                <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/23022027/hsc24-Clem-Temp-logo-v2.png"
+                <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/28022939/HSC24-Logo-Main-Purple.png"
                     alt="Hillsong Logo">
             </a>
         </div>
@@ -775,7 +1028,7 @@
         <div id="siteNav" class="site-nav ">
             <div class="site-nav-logo">
                 <a href="https://hillsong.com/conference/twentyfour/">
-                    <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/23022027/hsc24-Clem-Temp-logo-v2.png"
+                    <img src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/28022939/HSC24-Logo-Main-Purple.png"
                         alt="Hillsong Logo">
                 </a>
             </div>
@@ -930,76 +1183,79 @@
     </div>
     <div class="church-locator__overlay"></div>
     <div class='wrapper'>
-
-        <div id="" class="hsc-24-header hillsong-row section-wrap white " style="">
-            <div class="section-row">
-                <div class="rowtitles">
-                    <p class="rowtitle lighttext">Hillsong Conference 2024</p>
-                    <p class="rowsubtitle darktext">Always-Joy</p>
-                </div>
-                <div class="rowtext">
-                    <p>Always be full of joy in the Lord. I say it again—rejoice!</p>
-                </div>
-
+        <div class="hsc-24-header" id="">
+            <h2>Hillsong Conference</h2>
+            <img class="always-joy-text-logo"
+                src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/27044759/HSC24-Logo-Text-pink.png"
+                alt="Always Joy">
+            <h4>Tuesday 9 - Thursday 11 July, 2024<br>
+                Hillsong Convention Centre, Sydney</h4>
+            <div class="always-joy-emblem-1">
+                <img class="emblem-1-pink"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/27044027/Emblem-1-pink.png"
+                    alt="emblem 1 pink">
+                <img class="emblem-1-white"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/27044019/Emblem-1-white.png"
+                    alt="emblem 2 white">
             </div>
+            <img class="hsc-24-logo"
+                src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/27042103/HSC24-Logo-Main-White.png"
+                alt="hillsong conference logo">
+        </div>
+        <div class="hsc-24-verse" id="">
+            <h2 class="verse"><span>Always</span> be full of <span>joy</span> in the Lord.<br>I say it again—rejoice!
+            </h2>
+            <h4 class="verse-ref">Philippians 4:4 NLT</h4>
+            <p class="joy-quote"><span>Joy in God is not optional. It’s not icing for some to savor. It is central, and
+                    essential. We cannot glorify God as we ought unless our souls are satisfied in him.</span></p>
+            <h4 class="author-quote">Marshall Sega</h4>
+            <iframe src="https://player.vimeo.com/video/52035859?h=de340f3d8d" width="640" height="360" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
         </div>
         <div id="hsc-24-lead-pastors" class="hillsong-row section-wrap white hsc-24-lead-pastors" style="">
             <div class="section-row">
                 <div class="rowtitles">
-                    <p class="rowtitle lighttext">A conference curated for you</p>
+                    <p class="rowtitle lighttext">Find the always-joy</p>
+                </div>
+                <div class="rowtext">
+                    <div class="hsc-24-spining-emblem-4">
+                        <img class="emblem-4-pink"
+                            src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/06/28032046/Emblem-4-pink.png"
+                            alt="Always Joy emblem 4">
+                    </div>
                 </div>
                 <div class="grid row">
 
                     <div id="" class="hillsong-row text col colspan_1_of_2 ">
                         <p class="college-text iconcomponent-title"></p>
                         <div class="college-text iconcomponent-text ">
-                            <div class="fade-in-from-left">
-                                <p class="rowsubtitle">PASTORS PHIL &amp; LUCINDA DOOLEY</p>
-                            </div>
-                            <p>A NEW ERA &#8212; Hillsong Conference 2023! This year, our Conference has been
-                                specifically curated by you and for you! Many of you have told us what you want to see
-                                this year and we have been working hard to create a Hillsong Conference like never
-                                before.</p>
-                            <p>New to conference this year, we have handpicked the best for you with, interactive
-                                sessions, and exclusive in-room experiences that we know you&#8217;ll absolutely love!
-                                Together, we are diving into fresh sessions dedicated to spiritual growth and uncovering
-                                the heart behind our missions.</p>
-                            <p>CHOOSE YOUR CONFERENCE EXPERIENCE</p>
-                            <p>Customise your conference experience by choosing from a variety of interactive sessions
-                                where you can gather around tables and have real conversations with leaders and pastors.
-                                Dive deeper into topics such as spiritual disciplines, current societal issues, and
-                                trending topics relevant to this generation.</p>
-                            <p>Immerse yourself further by selecting in-room exclusive options like prayer groups,
-                                communion, curating your own unique conference journey.</p>
-                            <p>COMMUNITY AND CONNECTION AT THE FOREFRONT</p>
-                            <p>Connect with like-minded individuals and foster genuine relationships that extends beyond
-                                the conference.</p>
-                            <p>A new era awaits.</p>
-                            <p>With Love,<br />
-                                <span style="font-family: maisonneue_demi;">Pastors Phil &amp; Lucinda
-                                    Dooley</span><br />
-                                Hillsong Church
-                            </p>
+                            <p>Hillsong Conference has always sought to gather and equip the body of Christ. Together we
+                                have witnessed the mighty move of God in our lives, sparking a catalyst of change for
+                                good in our families, churches, and wider communities. As we look towards the future and
+                                set our gaze into 2024, our vision remains unchanged.</p>
+                            <p>Now, more than ever we need to pursue our Lord and Saviour. We need to take time to seek
+                                Him, draw near to Him and be in His presence – it is here we will find JOY. The esteemed
+                                author CS Lewis once said, “Joy is the serious business of heaven”. With that said, we
+                                extend to you an invitation to Hillsong Conference 2024, “Always-Joy”, we pray that this
+                                conference will continue to be a milestone in your life, journey, calling and
+                                experience.</p>
                         </div>
                     </div>
-                    <div class="college-video col colspan_1_of_2 ">
-                        <div id="" class="hillsong-row carousel">
-                            <div class="carousel-default">
-                                <div class="slideshowwrap">
-                                    <div class="slideshow slideshow-video">
-                                        <div class="slide">
-                                            <div class="fluidVideo">
-                                                <iframe
-                                                    data-src="https://player.vimeo.com/video/834653373?dnt=1&amp;app_id=122963"
-                                                    width="640" height="360" frameborder="0"
-                                                    allow="autoplay; fullscreen; picture-in-picture"
-                                                    allowfullscreen></iframe>
-                                            </div>
-                                            <div class="slideshow-caption test"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="" class="hillsong-row text col colspan_1_of_2 ">
+                        <p class="college-text iconcomponent-title"></p>
+                        <div class="college-text iconcomponent-text ">
+                            <p>We are committed to presenting a&nbsp;God-breathed conference that will bless and inspire
+                                you, no matter what area of Kingdom endeavour you (or your team) find yourself in. This
+                                gathering is an opportunity for your soul to be refreshed by the Holy Spirit, as we lift
+                                up the Name of Jesus together. The Word, worship, and a faith atmosphere have always
+                                been central to Hillsong Conference. You will also receive insights and practical tools
+                                to help you move forward and grow in your daily life. This may involve leadership in the
+                                Church or in the marketplace, deepening your personal faith journey, or making greater
+                                social impact in your community.</p>
+                            <p>We are excited and expectant for next year and hope you and your family can join us for
+                                what we truly believe will be a unique and significant Hillsong Conference.</p>
+                            <p>With love,</p>
+                            <p>Phil &amp; Lucinda Dooley</p>
                         </div>
                     </div>
                 </div>
@@ -1088,7 +1344,7 @@
                 </div>
             </div>
         </div>
-        <div class="hsc-24-slide-show-container hsc23-no-padding-bottom" id="hsc-23-families">
+        <div class="hsc-24-slide-show-container hsc23-no-padding-bottom" id="hsc-24-slide-show-container">
             <div class="conf23-slide-show-container"><img
                     src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/06/27101022/HSC23-Kids-HeaderBW.jpg"
                     alt="Hillsong Conference Families Picture 1" />
@@ -1174,7 +1430,7 @@
                 family only. Must be completed in the same transaction.
             </div>
         </div>
-        <div class="" id="">
+        <div class="hsc-24-on-demand" id="">
             <h3 class="hsc-24-title">Hillsong Conference On Demand</h3>
             <h4 class="hsc-24-subtitle">ANYTIME. ANYWHERE.</h4>
             <div class="fade-in-from-left">
@@ -1189,6 +1445,11 @@
                 <a class="button" href="/conference/online">LEARN MORE</a>
             </div>
             <hr />
+        </div>
+        <div class="" id="">
+            <div data-tf-widget="mIZ4Nihy" data-tf-opacity="100" data-tf-iframe-props="title=Discover Your Joy Quiz"
+                data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div>
+            <script src="//embed.typeform.com/next/embed.js"></script>
         </div>
     </div>
     <script type='text/javascript'>
@@ -1463,7 +1724,7 @@
                         href='https://hillsong.com/conference/wp-admin/admin.php?page=wp-mail-smtp'>WP Mail SMTP <div
                             class="wp-mail-smtp-admin-bar-menu-notification-counter"><span>1</span></div></a></li>
                 <li id='wp-admin-bar-new_draft'><a class='ab-item'
-                        href='https://hillsong.com/conference/wp-admin/admin.php?action=duplicate_post_save_as_new_post_draft&#038;post=632600&#038;_wpnonce=b36b5db9da'>Copy
+                        href='https://hillsong.com/conference/wp-admin/admin.php?action=duplicate_post_save_as_new_post_draft&#038;post=632600&#038;_wpnonce=b63eeab90a'>Copy
                         to a new draft</a></li>
             </ul>
             <ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu">
@@ -1493,7 +1754,7 @@
                             <li id='wp-admin-bar-edit-profile'><a class='ab-item'
                                     href='https://hillsong.com/conference/wp-admin/profile.php'>Edit Profile</a></li>
                             <li id='wp-admin-bar-logout'><a class='ab-item'
-                                    href='https://hillsong.com/conference/wp-login.php?action=logout&#038;_wpnonce=05e588412e'>Log
+                                    href='https://hillsong.com/conference/wp-login.php?action=logout&#038;_wpnonce=6ea20efa0e'>Log
                                     Out</a></li>
                         </ul>
                     </div>
@@ -1501,7 +1762,7 @@
             </ul>
         </div>
         <a class="screen-reader-shortcut"
-            href="https://hillsong.com/conference/wp-login.php?action=logout&#038;_wpnonce=05e588412e">Log Out</a>
+            href="https://hillsong.com/conference/wp-login.php?action=logout&#038;_wpnonce=6ea20efa0e">Log Out</a>
     </div>
 
     <script>
@@ -1541,14 +1802,44 @@
 
 
 
+
     <!--------------------------------------------- Custom Scripts --------------------------------------------->
-
-
-
-
-
+    <!-- Text color change with scroll -->
     <script>
-        const slideshowContainer = document.querySelector(".conf23-slide-show-container");
+        const verseContainer = document.querySelector(".hsc-24-verse");
+        const spanElements = verseContainer.querySelectorAll("span");
+
+        console.log(spanElements);
+
+        const percentageContainerTopToViewportHeight = (elementTopPosition) => {
+            const containerTopByViewportHeight = ((elementTopPosition + 100) - (window.innerHeight / 3)) / (window.innerHeight - (window.innerHeight / 3 * 2));
+
+            if (containerTopByViewportHeight >= 1) {
+                return 100;
+            } else if (containerTopByViewportHeight <= 0) {
+                return 0;
+            } else {
+                return (containerTopByViewportHeight * 100);
+            }
+        }
+
+        window.addEventListener("scroll", function () {
+
+            spanElements.forEach((span) => {
+                let elementTopPosition = verseContainer.getBoundingClientRect().top;
+                /* let elementTopPosition = span.getBoundingClientRect().top; */
+                const animationPercentage = percentageContainerTopToViewportHeight(elementTopPosition);
+                console.log(animationPercentage);
+                span.style.backgroundPosition = `${animationPercentage}%`;
+            });
+        });
+
+
+    </script>
+
+    <!-- slideshow gallery -->
+    <script>
+        const slideshowContainer = document.querySelector(".conf23-slide-show-container span");
         const images = slideshowContainer.querySelectorAll("img");
 
         let currentIndex = 0;
@@ -1569,9 +1860,6 @@
 
         setInterval(switchImageOpacity, 2000);
     </script>
-
-
-
 
 
 

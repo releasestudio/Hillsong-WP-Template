@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .wrapper {
+        scroll-snap-type: y proximity;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .content {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        scroll-snap-align: start;
+    }
+    .transparent-box p{
+        font-size: 2rem;
+        padding-bottom: 10vh;
+    }
+
+    .transparent-box {
+        height: 90vh;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        color: white;
+
+    }
+
+    .parallax-box {
+        background-image: url("https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        scroll-snap-align: start;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        overflow: scroll;
+        gap: 5vw;
+        padding: 0 10%;
+
+        perspective: 10px;
+    }
+
+    img {
+        width: 25vw;
+        height: 25vw;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    img.img2,
+    img.img4,
+    img.img6,
+    img.img8,
+    img.img10 {
+        transform: translateY(-45vw);
+    }
+
+    img.img1 {
+        transform: translateZ(2px);
+    }
+
+    img.img2 {
+        transform: translateZ(-5px);
+    }
+
+    img.img3 {
+        transform: translateZ(-3px);
+    }
+
+    img.img4 {
+        transform: translateZ(1px);
+    }
+
+    img.img5 {
+        transform: translateZ(0.5px);
+    }
+
+    img.img6 {
+        transform: translateZ(-3px);
+    }
+
+    img.img7 {
+        transform: translateZ(-2.7px);
+    }
+
+    img.img8 {
+        transform: translateZ(-1.5px);
+    }
+
+    img.img9 {
+        transform: translateZ(1px);
+    }
+
+    img.img10 {
+        transform: translateZ(-3px);
+    }
+
+    /* Add a class to control the visibility of images */
+    .visible {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+</style>
+
+
+
+<body>
+    <div class="wrapper">
+        <div class="content">Before</div>
+        <div class="hillsong-team">
+            <div class="parallax-box">
+                <div class="transparent-box"><h3>HILLSONG GLOBAL TEAM</h3></div>
+
+                <img class="img1"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/04/05103308/TN-Douglas.png" alt="">
+                <img class="img2"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04034701/HSC23_Mendez-700x700.jpg"
+                    alt="">
+                <img class="img3"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04034656/HSC23_Donna-700x700.jpg"
+                    alt="">
+                <img class="img4"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04054327/HSC23_JD-700x700.jpg"
+                    alt="">
+                <img class="img5"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04054325/HSC23_Jad-700x700.jpg"
+                    alt="">
+                <img class="img6"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04034703/HSC23_Robert-700x700.jpg"
+                    alt="">
+                <img class="img7"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2022/07/04034659/HSC23_Jayas-700x700.jpg"
+                    alt="">
+                <img class="img8"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/05/11102505/IMG_5908-700x700.jpg"
+                    alt="">
+                <img class="img9"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/05/11102509/IMG_5905-700x700.jpg"
+                    alt="">
+                <img class="img10"
+                    src="https://cdn.hillsong.com/wp-content/uploads/sites/18/2023/05/12063403/IMG_5927-700x700.jpg"
+                    alt="">
+
+                <div class="transparent-box"><p>Hillsong Conference is all about championing the cause of THE Church of Jesus Christ – across every nation, denomination, age and background. It is for people who are passionate about the local church and the call of the Kingdom of God.
+
+                    This conference gathers the greater church, inspires fresh vision and hope for the future, and equips every individual to walk out the call of God on their life. It inspires leaders and believers to make a difference in their sphere of influence for Kingdom’s cause. It equips the church with God-breathed sessions, practical tools and relational connection.</p></div>
+            </div>
+        </div>
+        <div class="content">After 1</div>
+        <div class="content">After 2</div>
+        <div class="content">After 3</div>
+    </div>
+
+
+    <script>
+        // Function to disable scroll until all content is scrolled
+        function disableScroll() {
+            var parallaxBox = document.querySelector('.parallax-box');
+            var contentHeight = parallaxBox.scrollHeight - parallaxBox.clientHeight;
+
+            parallaxBox.addEventListener('scroll', function () {
+                if (parallaxBox.scrollTop >= contentHeight) {
+                    parallaxBox.scrollTop = contentHeight;
+                }
+            });
+        }
+
+        // Call the function after the page has loaded
+        window.addEventListener('load', disableScroll);
+
+        // Function to add the 'visible' class to images when they enter the viewport
+        function handleIntersection(entries) {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                } else {
+                    entry.target.classList.remove("visible");
+                }
+            });
+        }
+
+        // Create an Intersection Observer instance
+        const entryObserver = new IntersectionObserver(handleIntersection, {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5, // Adjust this threshold value as needed
+        });
+
+        // Get all the images and observe each one
+        const images = document.querySelectorAll("img");
+        images.forEach((image) => {
+            entryObserver.observe(image);
+        });
+    </script>
+</body>
+
+</html>
